@@ -41,4 +41,10 @@ public class Account {
     public String getAccountNumber() {
         return this.accountNumber;
     }
+    public void displayAccountInfo(){
+        System.out.println("=== Account Information ===");
+        System.out.println("Account Number: " + this.accountNumber);
+        System.out.println("Owner: " + this.ownerName);
+        System.out.println("Balance: $" + String.format("%.2f", this.balance));
+    }
 }
